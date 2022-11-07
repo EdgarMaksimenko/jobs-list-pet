@@ -119,7 +119,6 @@ img.place{
     height: 13px;
   }
 }
-
 .mob__list__item{
   display: none;
   padding: 15px 15px 25px 15px;
@@ -130,6 +129,7 @@ img.place{
 }
 .mob__image__block{
   width: 20%;
+  margin-right: 5px;
 }
 .mob__content__block{
   width: 80%;
