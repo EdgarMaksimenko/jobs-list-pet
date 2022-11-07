@@ -1,0 +1,62 @@
+.pagination{
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+  margin-bottom: 65px;
+  background: white;
+  height: 52px;
+  width: max-content;
+  border-radius: 10px;
+}
+.pages{
+  display: flex;
+  align-items: center;
+  padding: 0 55px;
+}
+.pages button{
+  font-family: 'Proxima Nova';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20.8px;
+  line-height: 25px;
+  display: flex;
+  align-items: center;
+  letter-spacing: 1.73333px;
+  color: #70778B;
+  padding: 0 10px;
+  margin: 0 5px;
+  text-align: center;
+  background: transparent;
+  height: 100%;
+  border-bottom: 2px solid transparent;
+  margin-top: 2px;
+}
+.pagination .left, .pagination .right{
+  width: 68px;
+  background: transparent;
+}
+.pagination .left{
+  border-right: 1.3px solid #DEE3EF;
+  margin: 10px 0;
+}
+.pagination .right{
+  border-left: 1.3px solid #DEE3EF;
+  margin: 10px 0;
+}
+.pagination .left::before{
+  content: '<';
+  font-size: 20px;
+  font-weight: bold;
+  color: #70778B;
+}
+.pagination .right::before{
+  content: '>';
+  font-size: 20px;
+  font-weight: bold;
+  color: #70778B;
+}
+@media (max-width: 650px){
+  .pagination{
+    width: 100%;
+  }
+}

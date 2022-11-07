@@ -1,26 +1,22 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, {FC} from 'react';
+import { Routes, Route, Navigate } from 'react-router-dom';
+import JobList from './pages/JobList/Joblist';
+import JobTitle from './pages/JobTitle/JobTitle';
 
-function App() {
+const App: FC = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className='body-wrapper'>
+      <div className='container'>
+        <Routes>
+          <Route path ='/' element={<JobList/>}/>
+          <Route path ='/job/:id' element={<JobTitle/>}/>
+
+          {/* <Route path='*' element={<Navigate to='/404' />} />
+          <Route path ='/404' element={<NotFound/>}/>  */}
+        </Routes>
+      </div>
     </div>
-  );
-}
+  )
+};
 
 export default App;
