@@ -119,7 +119,7 @@ const JobTitle: FC = () => {
             </div> 
           </div>
 
-      ////////////////////////MOBILE INTERFACE/////////////////////////////
+      {/*////////////////////////MOBILE INTERFACE///////////////////////////// */}
 
           <div className={styles.mob__job__details}>
             <header>Job Details</header>

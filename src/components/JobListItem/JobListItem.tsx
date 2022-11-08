@@ -47,7 +47,7 @@ const JobListItem: FC<IJobList> = (job) => {
         </div>
       </NavLink>
 
-    ////////////////////////MOBILE INTERFACE//////////////////////////////
+    {/*////////////////////////MOBILE INTERFACE///////////////////////////// */}
 
       <NavLink className={styles.mob__list__item} to={`/job/${job.id}`}>
         <div className={styles.mob__image__block}>
