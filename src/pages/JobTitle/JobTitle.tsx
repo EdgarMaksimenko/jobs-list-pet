@@ -18,12 +18,12 @@ const JobTitle: FC = () => {
   const loading = useAppSelector(state => state.jobList.loading);
   const currentJob = jobs.find(item => item.id === id);
 
-
   React.useEffect(() => {
+    window.scrollTo(0, 0);
     if (loading) {
       dispatch(fetchJoblist());
-    }
-  }, [dispatch]);
+    }  
+  }, [dispatch, loading]);
 
   const countTimePosted: any = (dateOfPost: Date) => {
     let currentDate: Date = new Date();

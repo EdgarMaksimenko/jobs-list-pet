@@ -16,10 +16,11 @@ const JobList: FC = () => {
   const maxPageItems = 5;
 
   React.useEffect(() => {
+    window.scrollTo(0, 0);
     if(loading){
       dispatch(fetchJoblist());
-    }  
-  }, [dispatch]);
+    }   
+  }, [dispatch, loading]);
 
   if (!loading){
     return (
