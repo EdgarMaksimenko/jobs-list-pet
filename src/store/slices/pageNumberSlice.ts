@@ -19,13 +19,16 @@ const pageNumberSlice = createSlice({
     changePage(state, action: PayloadAction<string>){
       if(action.payload === '+'){
         state.page = state.page + 1;
+        window.scrollTo(0,0);
       }
       if(action.payload === '-'){
         state.page = state.page - 1;
+        window.scrollTo(0,0);
       }
     },
     setPage(state, action: PayloadAction<number>){
       state.page = action.payload;
+      window.scrollTo(0,0);
     }
   },
 });
